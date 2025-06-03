@@ -2,7 +2,7 @@
 
 # Vérifier qu'un argument a été passé
 if [ -z "$1" ]; then
-  echo "Usage: $0 {prepa|exercice1|exercice2|exercice3}"
+  echo "Usage: $0 {prepa|exercice1|exercice2|exercice3|exercice4}"
   exit 1
 fi
 
@@ -51,7 +51,9 @@ case "$entree" in
     ;;
   exercice4)
     cp atelier-sqlmesh/exercice4/* ./audits
+    cp atelier-sqlmesh/exercice2/models/enriched_orders_with_macro_and_audit.sql ./models
     sed -i '' "s/sqlmesh_example/${remplacement}/g" ./audits/audit_enriched_orders_revenue.sql
+    sed -i '' "s/sqlmesh_example/${remplacement}/g" ./models/enriched_orders_with_macro_and_audit.sql
     ;;
   *)
     echo "Valeur invalide : $entree"
