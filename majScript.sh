@@ -34,6 +34,10 @@ case "$entree" in
     sed -i '' "s/sqlmesh_example/${remplacement}/g" ./models/stg_order_items.sql 
     sed -i '' "s/sqlmesh_example/${remplacement}/g" ./models/stg_orders.sql
     sed -i '' "s/sqlmesh_example/${remplacement}/g" ./models/enriched_orders.sql  
+    cp atelier-sqlmesh/exercice1/stg_customers.csv ./seeds
+    cp atelier-sqlmesh/exercice1/stg_order_items.csv ./seeds
+    cp atelier-sqlmesh/exercice1/stg_orders.csv ./seeds
+
     ;; 
   exercice2)
     cp atelier-sqlmesh/exercice2/macros.sql ./macros
