@@ -14,7 +14,7 @@ gateways:
       # execution_project: 
       # quota_project: 
       # location: 
-      keyfile: "/home/sqlmesh/sqlmesh-atelier-wyseday/rare-result-248415-a5a4eb95acf0.json"
+      keyfile: "/home/sqlmesh/sqlmesh-atelier-wyseday/jsonkey/rare-result-248415-a5a4eb95acf0.json"
       # keyfile_json: 
       # token: 
       # refresh_token: 
