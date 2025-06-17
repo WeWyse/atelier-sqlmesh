@@ -30,10 +30,10 @@ case "$entree" in
     ;;
   exercice1)
     cp atelier-sqlmesh/exercice1/models/* ./models
-    sed -i '' "s/sqlmesh_example/${remplacement}/g" ./models/stg_customers.sql
-    sed -i '' "s/sqlmesh_example/${remplacement}/g" ./models/stg_order_items.sql 
-    sed -i '' "s/sqlmesh_example/${remplacement}/g" ./models/stg_orders.sql
-    sed -i '' "s/sqlmesh_example/${remplacement}/g" ./models/enriched_orders.sql  
+    sed -i "s/sqlmesh_example/${remplacement}/g" ./models/stg_customers.sql
+    sed -i "s/sqlmesh_example/${remplacement}/g" ./models/stg_order_items.sql 
+    sed -i "s/sqlmesh_example/${remplacement}/g" ./models/stg_orders.sql
+    sed -i "s/sqlmesh_example/${remplacement}/g" ./models/enriched_orders.sql  
     cp atelier-sqlmesh/exercice1/stg_customers.csv ./seeds
     cp atelier-sqlmesh/exercice1/stg_order_items.csv ./seeds
     cp atelier-sqlmesh/exercice1/stg_orders.csv ./seeds
@@ -42,18 +42,18 @@ case "$entree" in
   exercice2)
     cp atelier-sqlmesh/exercice2/macros.sql ./macros
     cp atelier-sqlmesh/exercice2/models/enriched_orders_with_macro.sql ./models
-    sed -i '' "s/sqlmesh_example/${remplacement}/g" ./models/enriched_orders_with_macro.sql 
+    sed -i "s/sqlmesh_example/${remplacement}/g" ./models/enriched_orders_with_macro.sql 
     ;;
   exercice3)
     cp atelier-sqlmesh/exercice3/* ./tests
-    sed -i '' "s/sqlmesh_example/${remplacement}/g" ./tests/test_enriched_orders.yaml
-    sed -i '' "s/sqlmesh_example/${remplacement}/g" ./tests/test_enriched_orders_with_macro.yaml
+    sed -i "s/sqlmesh_example/${remplacement}/g" ./tests/test_enriched_orders.yaml
+    sed -i "s/sqlmesh_example/${remplacement}/g" ./tests/test_enriched_orders_with_macro.yaml
     ;;
   exercice4)
     cp atelier-sqlmesh/exercice4/* ./audits
     cp atelier-sqlmesh/exercice2/models/enriched_orders_with_macro_and_audit.sql ./models
-    sed -i '' "s/sqlmesh_example/${remplacement}/g" ./audits/audit_enriched_orders_revenue.sql
-    sed -i '' "s/sqlmesh_example/${remplacement}/g" ./models/enriched_orders_with_macro_and_audit.sql
+    sed -i "s/sqlmesh_example/${remplacement}/g" ./audits/audit_enriched_orders_revenue.sql
+    sed -i "s/sqlmesh_example/${remplacement}/g" ./models/enriched_orders_with_macro_and_audit.sql
     ;;
   *)
     echo "Valeur invalide : $entree"
