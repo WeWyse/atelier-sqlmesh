@@ -42,7 +42,7 @@ RUN chmod +x ./atelier-sqlmesh/majScript.sh \
     && ./atelier-sqlmesh/majScript.sh prepa
 
 # Installer SQLMesh avec le support web
-#RUN pip install --no-cache-dir "sqlmesh[web]"
+RUN pip install --no-cache-dir "sqlmesh[web]"
 
 # Exposer le port pour SQLMesh UI (désormais 8000)
 EXPOSE 8000
