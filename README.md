@@ -64,7 +64,7 @@ Parmi les commandes principales :
 - Docker  
 - git
 
-1. Récupérer la clé json pour accéder à GCP (disponible [ici](https://drive.google.com/drive/folders/1kz81I0UvIZCid-P0Pz7_aqwoZl9qdGfE))
+1. Récupérer la clé json pour accéder à GCP 
 2. Cloner le dépôt :
     ```bash
     git clone git@github.com:WeWyse/atelier-sqlmesh.git
