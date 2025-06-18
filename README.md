@@ -218,6 +218,12 @@ sqlmesh ui
 
 ---
 
+## Lien vers le document de présentation du Wyseday
+[ici](https://docs.google.com/document/d/1DvMiqrmwdJXZrrnz30hO0lsww-AvdCpwl1iXWBL7dlA/edit?pli=1&tab=t.0)
+
+
+---
+
 ## Ressources
 
 - [Documentation officielle SQLMesh](https://sqlmesh.readthedocs.io/)
