@@ -4,6 +4,6 @@ AUDIT (
 );
 
 SELECT *
-FROM dataset_clemence.enriched_orders_with_macro_and_audit
+FROM sqlmesh_example.enriched_orders_with_macro_and_audit
 WHERE total_revenue <= 0 OR customer_id IS NULL
 
