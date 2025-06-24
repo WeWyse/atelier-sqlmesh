@@ -1,6 +1,6 @@
--- models/enriched_orders_with_macro.sql
+-- models/enriched_orders_with_macro_and_audit.sql
 MODEL (
-  name sqlmesh_example.enriched_orders_with_macro,
+  name sqlmesh_example.enriched_orders_with_macro_and_audit,
   audits (audit_enriched_orders_revenue)
 );
 
